@@ -12,7 +12,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.List;
 
 @RestController //annotation
-@RequestMapping("/api/brands") //www.kodlama.io/api/brands
+@RequestMapping("/api/brands") // http://localhost:8080/api/brands
 @AllArgsConstructor //Autowired bolumunu bunu ekledigimiz icin kullanmamiza gerek kalmadi. yerine bunu kullandik. singleton yapisi ile ilgili, bu konuya bakmalisin!!
 public class BrandsController {
     private BrandService brandService;
@@ -23,7 +23,7 @@ public class BrandsController {
 //    }
 
 
-    //@GetMapping("/getall") //www.kodlama.io/api/brands/getall (suan http://localhost:8080/api/brands/getall olarak geldi)
+    //@GetMapping("/getall")  http://localhost:8080/api/brands/getall
     @GetMapping()
     public List<GetAllBrandsResponse> getAll(){
         return this.brandService.getAll();

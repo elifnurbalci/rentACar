@@ -17,4 +17,5 @@ public class RentACarApplication {
 		return new ModelMapper();
 	}
 
+	//@Bean i metot duzeyine eklemek eskide kalan (spring) konu oldu, class duzeyine annotation lar koyarak iliski kurmak spring boot ile daha tercih edilir oldu. ancak illa ki metot duzeyinde eklemek istiyorsak kullanabiliriz.
 }
